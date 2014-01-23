@@ -16,13 +16,12 @@ function initializePage() {
 		//$(".jumbotron p").addClass("active");
 		$(".jumbotron p").toggleClass("active");
 
-		$("#submitBtn").click(updateProject);
-
 	});
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 	$("a.thumbnail").click(projectClick);
+	$("#submitBtn").click(updateProject);
 }
 function projectClick(e) {
     // prevent the page from reloading 
